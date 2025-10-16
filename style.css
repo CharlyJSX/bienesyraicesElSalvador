@@ -1,0 +1,107 @@
+body {
+  background: #e8f5e9;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background: #43a047;
+  color: #fff;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ...existing code... */
+
+main {
+  min-height: 60vh;
+  padding-bottom: 3em;
+}
+
+#propiedades {
+  margin-bottom: 3em;
+}
+
+.propiedades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em; /* Añade separación inferior */
+}
+
+.propiedad.tarjeta {
+  background: #43a047;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(67,160,71,0.15);
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.propiedad.tarjeta:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.propiedad img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.propiedad .info {
+  padding: 1em;
+}
+
+.propiedad .ubicacion {
+  font-size: 0.95em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+  background: #43a047;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(67,160,71,0.2);
+}
+
+.whatsapp-sticky img {
+  width: 40px;
+  height: 40px;
+}

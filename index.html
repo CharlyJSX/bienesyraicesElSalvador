@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compra y venta de bienes raíces en El Salvador. Ofrecemos propiedades desde 100 hasta 9000 manzanas. Contacta a Inversiones Carlos Mancía para invertir en terrenos, caña de azúcar y más.">
+  <title>Bienes Raíces El Salvador | Carlos Mancía </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>Bienes Raíces El Salvador</h1>
+    <p>Expertos en bienes raíces en El Salvador</p>
+    <nav>
+      <ul>
+        <li><a href="#propiedades">Propiedades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section id="propiedades">
+    <h2>Propiedades disponibles</h2>
+    <div class="propiedades-lista">
+      <!-- Propiedad plana -->
+      <div class="propiedad tarjeta fade-in">
+        <img src="https://st4.depositphotos.com/3418487/38952/i/450/depositphotos_389529602-stock-photo-aerial-view-land-positioning-point.jpg" alt="Terreno plano de 100 manzanas">
+        <div class="info">
+          <h3>100 Manzanas</h3>
+          <p>Terreno plano ideal para agricultura o desarrollo.</p>
+          <p class="ubicacion">Ubicación: San Vicente</p>
+        </div>
+      </div>
+      <!-- Propiedad caña de azúcar -->
+      <div class="propiedad tarjeta fade-in">
+        <img src="https://img.freepik.com/foto-gratis/hermoso-paisaje-cielo-despejado_23-2149721820.jpg" alt="Terreno de caña de azúcar de 200 manzanas">
+        <div class="info">
+          <h3>200 Manzanas</h3>
+          <p>Propiedad cultivada con caña de azúcar.</p>
+          <p class="ubicacion">Ubicación: La Paz</p>
+        </div>
+      </div>
+      <!-- Otra propiedad plana -->
+      <div class="propiedad tarjeta fade-in">
+        <img src="https://img.freepik.com/foto-gratis/vista-terreno-desarrollo-inmobiliario-empresarial_23-2149916736.jpg" alt="Terreno plano de 300 manzanas">
+        <div class="info">
+          <h3>300 Manzanas</h3>
+          <p>Terreno plano listo para inversión.</p>
+          <p class="ubicacion">Ubicación: Usulután</p>
+        </div>
+      </div>
+      <!-- Otra propiedad caña de azúcar -->
+      <div class="propiedad tarjeta fade-in">
+        <img src="https://img.freepik.com/fotos-premium/terreno-vista-aerea-identificar-simbolo-registro-area-vacante-mapa-propiedad-inmobiliaria-negocio-hogar_43780-7528.jpg" alt="Terreno de caña de azúcar de 9000 manzanas">
+        <div class="info">
+          <h3>9000 Manzanas</h3>
+          <p>Gran extensión para proyectos de inversión en caña de azúcar.</p>
+          <p class="ubicacion">Ubicación: La Unión</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- ...existing code... -->
+
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <p>Teléfono: <a href="tel:+50370487059">7048-7059</a></p>
+    <p>Email: <a href="mailto:carlosdavidmancia@gmail.com">carlosdavidmancia@gmail.com</a></p>
+    <p>Déjanos tu requerimiento <a href="https://wa.me/50370487059" target="_blank">WhatsApp</a></p>
+    <small>&copy; 2025 Bienes Raíces El Salvador - Carlos Mancía. Todos los derechos reservados.</small>
+  </footer>
+
+  <!-- Botón sticky de WhatsApp -->
+  <a href="https://wa.me/50370487059" class="whatsapp-sticky" target="_blank" aria-label="Solicitar requerimiento por WhatsApp">
+    <img src="./img/WhatsApp.svg.webp" alt="WhatsApp" />
+  </a>
+
+  <script>
+    // Animación de aparición de elementos
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.fade-in').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), 200 * i);
+      });
+    });
+  </script>
+</body>
+</html>
